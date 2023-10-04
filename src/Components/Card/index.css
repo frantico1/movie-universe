@@ -1,0 +1,45 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 250px;
+  max-width: 150px;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transform: translateY(0);
+  transition: transform 0.2s linear;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  transform: translateY(-30px);
+  position: relative;
+}
+
+.card-container .card-poster {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+}
+
+.card-container .card-poster img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: small;
+  text-align: center;
+  color: #fff;
+}
+
+.card-blur {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 500px) {
+}

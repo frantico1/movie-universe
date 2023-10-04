@@ -1,0 +1,121 @@
+.list-container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.list-poster {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-poster img {
+  transform: scale(1);
+  transition: transform 0.2s linear;
+}
+
+.list-poster img:hover {
+  cursor: pointer;
+  z-index: 3;
+  border: 5px solid black;
+  transform: scale(1.2);
+  transition: transform 0.2s linear;
+  box-shadow: 50px 30px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-card-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: start;
+  padding-top: 10%;
+  gap: 10px;
+}
+
+.list-title {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.list-title h1 {
+  background: linear-gradient(to top, black, white, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.list-season {
+  display: flex;
+  width: 40%;
+  color: #fff;
+}
+.list-rate {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  color: #fff;
+  gap: 2px;
+}
+.list-category {
+  display: flex;
+  width: 40%;
+  color: #fff;
+}
+.list-buttons {
+  display: flex;
+  width: 40%;
+  color: #fff;
+}
+.list-movie-info {
+  display: flex;
+  width: 90%;
+  color: #fff;
+  z-index: 2;
+}
+
+.list-movie-info:hover {
+  cursor: pointer;
+  z-index: 3;
+}
+
+.list-blur {
+  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.list-star {
+  color: yellow;
+}
+
+@media (max-width: 500px) {
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 10px;
+    height: auto;
+  }
+  .list-card-info {
+    display: flex;
+    flex: 1;
+  }
+  .list-movie-info {
+    display: flex;
+    flex: 1;
+  }
+}
