@@ -1,5 +1,5 @@
 
-# Bem Movie Universe
+# Movie Universe
 
 Welcome to Movie Universe, a React-based web application for exploring the world of movies! This project was created using Create React App, providing a robust foundation for building modern and scalable web applications.
 
